@@ -1,0 +1,9 @@
+<div class="row library">
+  <div class="col">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-action list-group-item-dark" (click)=display(content) *ngFor="let content of library_contents;" [ngClass]="{ 'active': content === selectedItem }">
+        {{content}}
+      </li>
+    </ul>
+  </div>
+</div>

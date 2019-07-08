@@ -7,9 +7,9 @@ import { LeftComponent } from './left/left.component';
 import { RightComponent } from './right/right.component';
 import { CenterComponent } from './center/center.component';
 import { BottomComponent } from './bottom/bottom.component';
-import { UserInfoComponent } from './userinfo/userinfo.component';
-import { LibraryComponent } from './library/library.component';
-import { PlaylistsComponent } from './playlists/playlists.component';
+import { LeftMenuComponent } from './left/left-menu/left-menu.component';
+import { LibraryComponent } from './left/library/library.component';
+import { PlaylistsComponent } from './left/playlists/playlists.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { PlaylistsComponent } from './playlists/playlists.component';
     RightComponent,
     CenterComponent,
     BottomComponent,
-    UserInfoComponent,
+    LeftMenuComponent,
     LibraryComponent,
     PlaylistsComponent
   ],

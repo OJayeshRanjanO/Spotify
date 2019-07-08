@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ShareDataService } from '../share-data.service';
+
 
 @Component({
   selector: 'app-center',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./center.component.scss']
 })
 export class CenterComponent implements OnInit {
+  title: string;
 
-  constructor() { }
-
+  constructor(private appservice: ShareDataService) { }
   ngOnInit() {
+    this.appservice.title.subscribe(title => {
+      this.title = title;
+    });
   }
 
 }
