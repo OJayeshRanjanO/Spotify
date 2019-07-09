@@ -2,11 +2,18 @@
   height: 20%;
   background-image: linear-gradient(to left, #000000, #141414, #202020, #2d2d2d, #3a3a3a);
   color: white;
+  font-size: 0.9rem;
+  font-weight:bold;
+}
+
+.list-group {
+  position: relative;
+  top: 10%;
 }
 
 .list-group-item {
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
 }
 
 .list-group-item-dark {

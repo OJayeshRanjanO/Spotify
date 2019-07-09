@@ -1,16 +1,19 @@
 @import "../../../../styles.scss";
 
 .library {
-  border-top: 2px solid $header-color;
+  /*border-top: 2px solid $header-color;*/
   height: 30%;
   background-image: linear-gradient(to left, #000000, #141414, #202020, #2d2d2d, #3a3a3a);
   color: white;
   padding: 2px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
 }
 
 .list-group-item {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
+  font-weight: bold;
 }
 
 

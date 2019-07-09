@@ -11,6 +11,8 @@ import { LibraryComponent } from './upper/left/library/library.component';
 import { PlaylistsComponent } from './upper/left/playlists/playlists.component';
 import { UpperComponent } from './upper/upper.component';
 import { LowerComponent } from './lower/lower.component';
+import { BrowseComponent } from './upper/center/browse/browse.component';
+import { GenreMoodsComponent } from './upper/center/browse/genre-moods/genre-moods.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { LowerComponent } from './lower/lower.component';
     LibraryComponent,
     PlaylistsComponent,
     UpperComponent,
-    LowerComponent
+    LowerComponent,
+    BrowseComponent,
+    GenreMoodsComponent
   ],
   imports: [
     BrowserModule,

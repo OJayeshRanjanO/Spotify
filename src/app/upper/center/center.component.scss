@@ -1,6 +1,32 @@
 .center-console {
   height: 100%;
-  background-color:black;
+  background-color: black;
   color: white;
-  font-variant: small-caps;
+}
+
+.title {
+  position: relative;
+  top: 10%;
+  font-family: 'Alfa Slab One', cursive;
+  letter-spacing: 2px;
+  padding: 1rem;
+}
+
+.menu {
+  position: relative;
+  top: 10%;
+  height: 75%;
+  font-size: 0.8rem;
+  color: #d1d1d1;
+  padding: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-top: 0px;
+  padding:0px;
+}
+
+app-browse {
+  width: 100%;
+  height: 100%;
+
 }
