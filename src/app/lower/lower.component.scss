@@ -1,0 +1,16 @@
+@import "../../styles.scss";
+
+.row {
+  height: 10%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.col-panel {
+  height: 100% !important;
+  border-top: 2px solid $header-color !important;
+}
+
+.panel-border {
+  border-top: 2px solid $header-color !important;
+}

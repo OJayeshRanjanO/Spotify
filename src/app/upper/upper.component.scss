@@ -1,0 +1,22 @@
+@import "../../styles.scss";
+
+div.container {
+  position: relative;
+  height: 90%;
+  width: 1190px !important;
+}
+
+.row {
+  height: 90%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.col-panel {
+  height: 100% !important;
+}
+
+.panel-border {
+  border-right: 2px solid $header-color !important;
+  border-left: 2px solid $header-color !important;
+}

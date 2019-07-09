@@ -3,13 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LeftComponent } from './left/left.component';
-import { RightComponent } from './right/right.component';
-import { CenterComponent } from './center/center.component';
-import { BottomComponent } from './bottom/bottom.component';
-import { LeftMenuComponent } from './left/left-menu/left-menu.component';
-import { LibraryComponent } from './left/library/library.component';
-import { PlaylistsComponent } from './left/playlists/playlists.component';
+import { LeftComponent } from './upper/left/left.component';
+import { RightComponent } from './upper/right/right.component';
+import { CenterComponent } from './upper/center/center.component';
+import { LeftMenuComponent } from './upper/left/left-menu/left-menu.component';
+import { LibraryComponent } from './upper/left/library/library.component';
+import { PlaylistsComponent } from './upper/left/playlists/playlists.component';
+import { UpperComponent } from './upper/upper.component';
+import { LowerComponent } from './lower/lower.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +18,11 @@ import { PlaylistsComponent } from './left/playlists/playlists.component';
     LeftComponent,
     RightComponent,
     CenterComponent,
-    BottomComponent,
     LeftMenuComponent,
     LibraryComponent,
-    PlaylistsComponent
+    PlaylistsComponent,
+    UpperComponent,
+    LowerComponent
   ],
   imports: [
     BrowserModule,
