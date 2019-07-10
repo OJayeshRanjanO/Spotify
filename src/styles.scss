@@ -1,10 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+
 $green: #00ab1a;
 $red: #ab0000;
 $yellow: #ffff00;
 $blue: #2f00ff;
 $purple: #7b00e0;
-$header-color: $green;
+$header-color: $blue;
+
+
+
+/*$green-app-primary: mat-palette($mat-green);
+$green-app-accent: mat-palette($mat-green, A200, A100, A400);
+$green-app-warn: mat-palette($mat-green);
+$green-app-theme: mat-light-theme($green-app-primary, $green-app-accent, $green-app-warn);
+@include angular-material-theme($green-app-theme);
+
+$red-app-primary: mat-palette($mat-red);
+$red-app-accent: mat-palette($mat-red, A200, A100, A400);
+$red-app-warn: mat-palette($mat-red);
+$red-app-theme: mat-light-theme($red-app-primary, $red-app-accent, $red-app-warn);
+@include angular-material-theme($red-app-theme);*/
+
+
+/*::ng-deep .mat-accent .mat-slider-thumb {
+  background-color: $header-color;
+}
+
+::ng-deep .mat-accent .mat-slider-thumb-label {
+  background-color: $header-color;
+}
+
+::ng-deep .mat-accent .mat-slider-track-fill::after {
+  background-color: $header-color;
+}*/
 
 html, body {
   margin: 0px;

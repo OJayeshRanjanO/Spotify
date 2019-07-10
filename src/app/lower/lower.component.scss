@@ -1,9 +1,14 @@
 @import "../../styles.scss";
+@import '~@angular/material/theming';
 
 .row {
   height: 10%;
   padding: 0px;
   margin: 0px;
+}
+
+.row-content{
+  height:50%!important;
 }
 
 .col-panel {
@@ -13,4 +18,35 @@
 
 .panel-border {
   border-top: 2px solid $header-color !important;
+}
+
+button{
+  background-color:transparent;
+}
+
+.material-icons {
+  color: grey;
+  font-size: 30px;
+
+  &:hover {
+    color:white;
+    cursor:pointer;
+  }
+}
+
+@include mat-core();
+::ng-deep .mat-progress-bar-fill::after {
+  background-color: $header-color;
+}
+
+::ng-deep .mat-progress-bar-buffer {
+  background: darken($header-color,20%);
+}
+
+::ng-deep .mat-progress-bar {
+  border-radius: 2px;
+}
+
+mat-progress-bar:hover{
+  cursor:pointer;
 }
