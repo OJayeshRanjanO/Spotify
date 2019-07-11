@@ -1,0 +1,37 @@
+<div class="row home">
+  <div class="col">
+    <div class="row">
+      <div class="col">
+        RECENTLY PLAYED
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col" style="color:red;">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active" *ngFor="let partial_list of song_list;let i = index" [ngClass]="{'active': i===0}" >
+              <div class="row">
+                <div class="col" *ngFor="let song of partial_list;let j = index">
+                  <div class="card" (click)="playSong(i,j)">
+                    <img src={{song.src}}>
+                    <div class="centered"><i class="material-icons" >play_arrow</i><p>{{song.author}} : {{song.name}}</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

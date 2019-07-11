@@ -7,7 +7,8 @@
     </div>
     <div class="row menu">
       <div class="col">
-        <app-browse ></app-browse>
+        <app-home *ngIf="title === 'Home'"></app-home>
+        <app-browse *ngIf="title === 'Browse'"></app-browse>
       </div>
     </div>
   </div>

@@ -47,6 +47,24 @@ button{
   border-radius: 2px;
 }
 
-mat-progress-bar:hover{
-  cursor:pointer;
+
+::ng-deep .mat-slider-ticks {
+  border-radius: 2px;
+}
+
+::ng-deep .mat-accent .mat-slider-thumb {
+  background-color: red;
+}
+
+::ng-deep .mat-accent .mat-slider-track-fill {
+  background-color: red;
+}
+
+::ng-deep .mat-slider-horizontal .mat-slider-track-background {
+  background-color: red;
+}
+
+mat-slider {
+  height: 20px;
+  padding: 0px;
 }

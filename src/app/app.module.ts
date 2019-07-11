@@ -16,6 +16,10 @@ import { UpperComponent } from './upper/upper.component';
 import { LowerComponent } from './lower/lower.component';
 import { BrowseComponent } from './upper/center/browse/browse.component';
 import { GenreMoodsComponent } from './upper/center/browse/genre-moods/genre-moods.component';
+import { HomeComponent } from './upper/center/home/home.component';
+
+import { Song, ShareLowerDataService } from './lower/share-lower-data.service';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +33,8 @@ import { GenreMoodsComponent } from './upper/center/browse/genre-moods/genre-moo
     UpperComponent,
     LowerComponent,
     BrowseComponent,
-    GenreMoodsComponent
+    GenreMoodsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,7 @@ import { GenreMoodsComponent } from './upper/center/browse/genre-moods/genre-moo
     MatProgressBarModule,
     MatSliderModule
   ],
-  providers: [],
+  providers: [ShareLowerDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Howl, Howler } from 'howler';
+import { Song, ShareLowerDataService } from '../lower/share-lower-data.service';
 
 @Component({
   selector: 'app-lower',
@@ -13,12 +14,23 @@ export class LowerComponent implements OnInit {
   mymusic = ['http://dl27.youtubeconverter.io/?file=M3R4SUNiN3JsOHJ6WWQ2a3NQS1Y5ZGlxVlZIOCtyZ3FuZE04d2dnY0U3NUJxWjg4Nk9pNU1jQk1QWmdaeEk2bkh1RjI0aHZpY05HWk9UNjQ0dFlyVWlESDhkOHh2QURmOHBvb0JJd2pjQS8zanZLMmxEUXoyeUg0Ym91SVI1NEhLQ1ZkdWhKdTBqS1dndkxidEY2MStIT29vVXVHZEJzWXB6WUVMK2J2L1laYTNHcllVT0h0MTVVS2tnU0l4NkJJMitLVWhUQ2lqYjh1NjVwMlVrMXhmWVIwNmNla2o2aUM5QkJBenN0TmxCLzIvNlNqSG80OERxQ0tjRHAxWTNOY3Y3MjRCVTlPblhVPQ%3D%3D',]
   playlist_counter = 0
   timePlayed = 0;
-  constructor() { }
+
+
+  song1: Song = null;
+
+  constructor(private appservice: ShareLowerDataService) { }
 
   ngOnInit() {
     this.isPlaying = false;
     this.playlist_counter = 0;
     this.timePlayed = 0;
+
+
+    this.appservice.song.subscribe(song => {
+      console.log(this.song1);
+      console.log(song)
+      this.song1 = new Song("", song.author, song.name);
+    });
   }
 
 
