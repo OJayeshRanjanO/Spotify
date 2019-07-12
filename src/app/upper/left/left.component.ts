@@ -8,7 +8,7 @@ import { ShareDataService } from '../../share-data.service';
 })
 export class LeftComponent implements OnInit {
 
-  public library_contents = ['Made For You', 'Recently Played', 'Liked Songs', 'Albums', 'Artists','Playlists'];
+  public library_contents = ['Recommemded', 'Recent', 'Liked', 'Albums', 'Artists','Playlists'];
   selectedItem = "";
   title: number;
   constructor(private appservice: ShareDataService) { }

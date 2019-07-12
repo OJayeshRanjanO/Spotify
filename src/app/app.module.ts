@@ -9,9 +9,6 @@ import { AppComponent } from './app.component';
 import { LeftComponent } from './upper/left/left.component';
 import { RightComponent } from './upper/right/right.component';
 import { CenterComponent } from './upper/center/center.component';
-import { LeftMenuComponent } from './upper/left/left-menu/left-menu.component';
-import { LibraryComponent } from './upper/left/library/library.component';
-import { PlaylistsComponent } from './upper/left/playlists/playlists.component';
 import { UpperComponent } from './upper/upper.component';
 import { LowerComponent } from './lower/lower.component';
 import { BrowseComponent } from './upper/center/browse/browse.component';
@@ -19,6 +16,7 @@ import { GenreMoodsComponent } from './upper/center/browse/genre-moods/genre-moo
 import { HomeComponent } from './upper/center/home/home.component';
 
 import { Song, ShareLowerDataService } from './lower/share-lower-data.service';
+import * as $ from 'jquery';
 
 
 @NgModule({
@@ -27,9 +25,6 @@ import { Song, ShareLowerDataService } from './lower/share-lower-data.service';
     LeftComponent,
     RightComponent,
     CenterComponent,
-    LeftMenuComponent,
-    LibraryComponent,
-    PlaylistsComponent,
     UpperComponent,
     LowerComponent,
     BrowseComponent,

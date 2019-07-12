@@ -4,16 +4,16 @@
     </div>
     <div class="row">
       <div class="col-1" style="padding-top:17px;">
-        <div><i class="material-icons" style="font-size:20px;">volume_off</i></div>
+        <div><i class="material-icons" style="font-size:20px;" (click)="volume = 0;">volume_off</i></div>
       </div>
       <div class="col-1" style="padding-top:14px;">
-        <div><i class="material-icons" style="font-size:25px;">volume_down</i></div>
+        <div><i class="material-icons" style="font-size:25px;" (click)="volume = volume >= 10 ? volume - 10 : 0;">volume_down</i></div>
       </div>
       <div class="col-7">
-        <mat-slider></mat-slider>
+        <mat-slider [value]="volume" (input)="volume = $event.value;"></mat-slider>
       </div>
       <div class="col-1" style="padding-top:14px;">
-        <div><i class="material-icons" style="font-size:25px;">volume_up</i></div>
+        <div><i class="material-icons" style="font-size:25px;" (click)="volume = volume <= 90 ? volume + 10 : 100;" >volume_up</i></div>
       </div>
     </div>
   </div>
@@ -43,6 +43,8 @@
 
       <div class="col">
         <div class="d-flex p-2 float-right"><i class="material-icons">playlist_play</i></div>
+        <div class="d-flex p-2 float-right"><i class="material-icons">thumb_up</i></div>
+        <div class="d-flex p-2 float-right"><i class="material-icons">thumb_down</i></div>
       </div>
     </div>
     <div class="row row-content">
