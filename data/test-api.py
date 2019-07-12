@@ -18,10 +18,12 @@ spotipyObject = spotipy.Spotify(auth=token)
 
 lz_uri = 'spotify:artist:36QJpDe2go2KgaRleHCDTp'
 
-results = spotipyObject.artist_top_tracks(lz_uri)
-print(json.dumps(results,sort_keys=True, indent=4))
-for track in results['tracks'][:10]:
-	('track    : ' + track['name'])
-	print('audio    : ' + track['preview_url'])
-	print('cover art: ' + track['album']['images'][0]['url'])
-	print()
+# results = spotipyObject.artist_top_tracks(lz_uri)
+results = spotipyObject.current_user_playing_track()
+print(results)
+# print(json.dumps(results,sort_keys=True, indent=4))
+# for track in results['tracks'][:10]:
+# 	('track    : ' + track['name'])
+# 	print('audio    : ' + track['preview_url'])
+# 	print('cover art: ' + track['album']['images'][0]['url'])
+# 	print()
