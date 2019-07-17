@@ -11,7 +11,7 @@ export class LowerComponent implements OnInit {
   sound = null;
   isPlaying = false;
   seek_value: number = 0
-  mymusic = []
+  mymusic = ['https://r4---sn-ab5sznly.googlevideo.com/videoplayback?expire=1563415709&ei=PYAvXdWPKb6F2LYPzZ-M8Ag&ip=108.179.21.226&id=o-APp07jBuaVhDXsuG_Z7iQ5_bovrvRt39davMMYr3ePTI&itag=171&source=youtube&requiressl=yes&mm=31%2C26&mn=sn-ab5sznly%2Csn-tt1eln7s&ms=au%2Conr&mv=m&mvi=3&pl=18&initcwndbps=1436250&mime=audio%2Fwebm&gir=yes&clen=3355302&dur=202.888&lmt=1541539155526123&mt=1563394028&fvip=4&keepalive=yes&c=WEB&txp=3511222&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cmime%2Cgir%2Cclen%2Cdur%2Clmt&sig=ALgxI2wwRAIgTf0cE4z-eBie66nofyZru-9owtcDg_bQig7JRbML3BECIHpa5n85jye0nOJlmopvaTObtIPERQNx3qr3-8iq-UEp&lsparams=mm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AHylml4wRQIgPPgbIy0cBGZ7XTpl1xjwzLKPOEQAjBKJMxJ--4Kc4kMCIQCT3PT0W1VJNRQ4QmhwY0H2W6N6eZJYorlS-JZb7_i-Aw%3D%3D&ratebypass=yes']
   playlist_counter:number = 0
   timePlayed:number = 0;
   volume:number = 0;
